@@ -108,9 +108,10 @@
 <body class="overflow-x-hidden">
 
     <!-- 背景音樂播放器 (使用 SndUp 提供的線上音訊 MP3 直連網址) -->
-    <audio id="bgMusic" loop autoplay preload="auto" playsinline>
-  <source src="./marry.mp3" type="audio/mpeg">
-</audio>
+    <audio id="bgMusic" loop preload="auto" playsinline>
+        <source src="./marry.mp3" type="audio/mpeg">
+        
+    </audio>
 
     <!-- 右下角優雅漂浮音樂按鈕 -->
     <div id="musicToggleBtn" class="fixed bottom-6 right-6 z-50 w-12 h-12 bg-white/95 backdrop-blur-md rounded-full shadow-lg border border-morandi-gold/25 flex items-center justify-center cursor-pointer text-morandi-gold transition-all duration-300 hover:scale-110 active:scale-95 group" onclick="toggleMusic(event)">
@@ -168,7 +169,7 @@
                 Cheers to us
             </p>
             
-            <p class="font-cormorant text-base sm:text-lg tracking-[0.2em] opacity-90 border-t border-b border-white/30 py-2 px-6">
+            <p class="font-cormorant text-2xl sm:text-3xl font-bold tracking-[0.3em] text-white mt-4 drop-shadow-md">
                 2026 . 10 . 03
             </p>
         </div>
@@ -261,11 +262,20 @@
                         <li>
                             <strong class="font-semibold text-morandi-dark block mb-1">地點 LOCATION</strong>
                             <span class="nowrap-item font-semibold text-morandi-gold text-lg">翡麗詩莊園</span>
+                         </li>
+
+                        <li>
+                             <strong class="font-semibold text-morandi-dark block mb-1">日期 DATE</strong>
+                            <span class="nowrap-item font-semibold text-morandi-gold text-lg">2026年10月03日 星期六</span>
                         </li>
+
                         <li>
                             <strong class="font-semibold text-morandi-dark block mb-1">時間 TIME</strong>
-                            <span class="nowrap-item">12：00入席</span> ｜ <span class="nowrap-item">12：30開席</span>
+                            <span class="nowrap-item font-semibold text-morandi-gold text-lg">12：00入席</span>
+                             <span class="text-morandi-gold mx-1">｜</span>
+                             <span class="nowrap-item font-semibold text-morandi-gold text-lg">12：30開席</span>
                         </li>
+                    </ul>
                     </ul>
                 </div>
             </div>
@@ -394,7 +404,7 @@
                 <h2 class="font-noto text-3xl text-morandi-dark tracking-[0.2em] mb-3">出席回函</h2>
                 <p class="font-cormorant text-xs tracking-widest text-morandi-sage uppercase mb-4">ATTENDANCE INQUIRY</p>
                 <div class="w-12 h-[1px] bg-morandi-gold mx-auto"></div>
-                <p class="text-xs text-neutral-400 mt-4 leading-relaxed">為協助我們規劃完美的席次，誠摯邀請您於 <span class="text-morandi-gold font-semibold">2026 年 8 月 31 日前</span> 填寫回函。</p>
+                <p class="text-xs text-neutral-400 mt-4 leading-relaxed">為協助我們規劃完美的席次，誠摯邀請您於 <span class="text-morandi-gold font-semibold">2026 年 7 月 10 日前</span> 填寫回函。</p>
             </div>
 
             <!-- 智慧型表單主體 (完全統整串接您的 Google 表單，欄位保持為空) -->
