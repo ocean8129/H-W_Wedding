@@ -432,12 +432,12 @@
         </div>
     </section>
 
-     <!-- 6. 出席回函引導與 Google Form 直接連結按鈕 (融入唯美放大版四葉草幸福與奢華雙層邊框元素) -->
+    <!-- 6. 出席回函引導與 Google Form 直接連結按鈕 (融入唯美放大版四葉草幸福與奢華雙層邊框元素) -->
     <section id="reply" class="bg-morandi-gold/5 py-24 px-6 relative overflow-hidden">
         
-        <!-- 背景漂浮藝術四葉草裝飾 (尤加利綠與輕微旋轉 - 顯著放大版) -->
-        <div class="absolute -left-16 top-6 w-44 h-44 text-morandi-sage/10 pointer-events-none clover-anim-1">
-            <svg viewBox="0 0 100 100" fill="currentColor">
+        <!-- 背景漂浮藝術四葉草裝飾 (尤加利綠與輕微旋轉 - 顯著放大與手機自動縮小版) -->
+        <div class="absolute -left-10 md:-left-16 top-6 w-28 h-28 md:w-44 md:h-44 text-morandi-sage/10 pointer-events-none clover-anim-1">
+            <svg viewBox="0 0 100 100" fill="currentColor" class="w-full h-full">
                 <!-- 第一瓣心形 -->
                 <path d="M50,50 C35,25 15,35 25,50 C15,65 35,75 50,50 Z"/>
                 <!-- 第二瓣心形 -->
@@ -450,8 +450,8 @@
                 <path d="M50,65 Q45,85 30,90 Q43,83 50,70 Z" fill="currentColor"/>
             </svg>
         </div>
-        <div class="absolute -right-24 bottom-6 w-56 h-56 text-morandi-gold/10 pointer-events-none clover-anim-2">
-            <svg viewBox="0 0 100 100" fill="currentColor">
+        <div class="absolute -right-16 md:-right-24 bottom-6 w-36 h-36 md:w-56 md:h-56 text-morandi-gold/10 pointer-events-none clover-anim-2">
+            <svg viewBox="0 0 100 100" fill="currentColor" class="w-full h-full">
                 <path d="M50,50 C35,25 15,35 25,50 C15,65 35,75 50,50 Z"/>
                 <path d="M50,50 C75,35 65,15 50,25 C35,15 25,35 50,50 Z"/>
                 <path d="M50,50 C65,75 85,65 75,50 C85,35 65,25 50,50 Z"/>
@@ -474,10 +474,10 @@
             <div class="absolute bottom-0 left-0 w-40 h-40 bg-morandi-sage/5 rounded-full -ml-16 -mb-16 blur-xl"></div>
 
             <div class="relative z-10 space-y-6">
-                <!-- 精緻的金色四葉草主視覺徽章 (從原本 w-16 放大至 w-24，更加宏大精緻) -->
+                <!-- 精緻的金色四葉草主視覺徽章 (w-24 完美容器，內部的 SVG 設為 w-full h-full 以確保手機版絕不塌陷) -->
                 <div class="flex justify-center mb-2">
                     <div class="w-24 h-24 text-morandi-gold transition-transform duration-500 hover:scale-110 flex items-center justify-center bg-morandi-goldLight/30 rounded-full p-3 border border-morandi-gold/20 shadow-md">
-                        <svg class="w-18 h-18 sm:w-20 sm:h-20" viewBox="0 0 100 100" fill="currentColor">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" fill="currentColor">
                             <!-- 第一瓣：左心形 -->
                             <path d="M50,50 C38,15 15,30 28,48 C15,66 38,81 50,50 Z"/>
                             <!-- 第二瓣：上心形 -->
@@ -519,7 +519,7 @@
                        target="_blank" 
                        rel="noopener noreferrer" 
                        class="inline-flex items-center justify-center gap-3 px-8 py-4 sm:px-10 bg-morandi-gold hover:bg-[#c39262] text-white font-semibold rounded-xl tracking-[0.25em] shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 transition-all duration-300 group">
-                        <!-- 按鈕內的四葉草小標誌 (同步略微放大至 w-6 h-6) -->
+                        <!-- 按鈕內的四葉草小標誌 (寬高設為 w-6 h-6 確保手機版正常渲染) -->
                         <svg class="w-6 h-6 text-white animate-pulse" viewBox="0 0 100 100" fill="currentColor">
                             <path d="M50,50 C38,15 15,30 28,48 C15,66 38,81 50,50 Z"/>
                             <path d="M50,50 C81,38 66,15 48,28 C30,15 15,38 50,50 Z"/>
